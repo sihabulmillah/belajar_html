@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Form</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="user">Username</label>
+        <input type="text" id="user" placeholder="masukan username"><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="masukan password"><br>
+        <!--cara supaya teks tidak terlihat atau di sembunyikan-->
+
+        <label for="konfirmasi">Konfirmasi Password</label>
+        <input type="password" id="konfirmasi" placeholder="konfirmasi password"><br>
+
+        <label for="gender">Gender</label>
+        <label for="lk">Laki-Laki</label>
+        <input type="radio" value="laki-laki" name="jenis_kelamin" checked id="lk">
+        <!-- name berfungsi untuk menandakans sebuah grup  -->
+        <!--checked untuk isi otomatis-->
+        <label for="pr">Perempuan</label>
+        <input type="radio" value="perempuan" name="jenis_kelamin" id="pr"><br>
+
+        <label for="tgl">Tanggal Lahir</label>
+        <input type="date" id="tgl"><br>
+
+        <label for="hobi">Hobi</label>
+        <input type="checkbox" id="mn" value="nulis"><label for="mn">Menulis</label>
+        <input type="checkbox" id="mnh" value="manah"><label for="mnh">Memanah</label>
+        <input type="checkbox" id="rn" value="renang"><label for="rn">Berenang</label><br>
+        <input type="checkbox" id="vl" value="voli"><label for="vl">Volly Ball</label>
+        <input type="checkbox" id="bl" value="bola"><label for="bl">Sepak Bola</label>
+        <input type="checkbox" id="bd" value="badminton"><label for="bd">Badminton</label><br>
+
+        <label for="asal">Asal</label>
+        <select name="" id="asal">
+            <option hidden>-==Pilih disini==-</option>
+            <option value="Riau">Riau</option>
+            <option value="Kudus">Kudus</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Tasikmalaya">Tasikmalaya</option>
+            <option value="Tanggerang">Tanggerang</option>
+            <option value="Bekasi">Bekasi</option>
+            <option value="Bogor">Bogor</option>
+            <option value="Aceh">Aceh</option>
+            <option value="Demak">Demak</option>
+            <option value="Cimahi">Cimahi</option>
+            <option value="Cirebon">Cirebon</option>
+        </select><br>
+
+        <label for="alamat">Alamat</label><br>
+        <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea><br>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Ulang</button>
+    </form>
+</body>
+
+</html>

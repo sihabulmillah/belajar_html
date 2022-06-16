@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Membuat Tabel & Multimedia</title>
+</head>
+
+<body>
+
+    <!-- membuat komponen tabel -->
+    <h2>Latihan Tabel</h2>
+    <!-- cellpadding = mengatur jarak antar konten dengan tepi dalam -->
+    <table border="i" cellpadding="6">
+        <!-- tr = baris -->
+        <tr>
+            <!-- td = kolom -->
+            <!-- td = tabel data -->
+            <td>No</td>
+            <td>Nama</td>
+            <td>No.HP</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ucup</td>
+            <td>089678543112</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Usro</td>
+            <td>089478543112</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Ujang</td>
+            <td>089658543112</td>
+        </tr>
+
+    </table>
+    <br> <!-- cellspacing = mengatur jarak antar tepi luar dengan sel-->
+    <!-- sel adalah gabungan dari kolom dan baris -->
+    <table border="i" cellspacing="6">
+        <thead>
+
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>No.HP</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ucup</td>
+                <td>089678543112</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Usro</td>
+                <td>089478543112</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Ujang</td>
+                <td>089658543112</td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+    <br>
+    <table border="i" cellpadding="6" width="600" height="100">
+        <tr bgcolor="lightblue">
+            <th width="100">No</th>
+            <th width="300">Nama Barang</th>
+            <th width="200">Harga</th>
+        </tr>
+        <tr>
+            <td align="center">1</td>
+            <td>HP Iphon 12</td>
+            <td>Rp 9.000.000</td>
+        </tr>
+        <tr>
+            <td align="center">2</td>
+            <td rowspan="2">Laptop HP</td>
+            <td>Rp 11.000.000</td>
+        </tr>
+        <tr>
+            <td align="center">3</td>
+            <!-- <td>Mesin Cuci</td> -->
+            <td>Rp 2.200.000</td>
+        </tr>
+        <tr>
+            <!-- colspan = menyatukan kolom -->
+            <!-- rowspan = menyatukan baris -->
+            <td colspan="2" align="right"><b>Total</b></td>
+            <td bgcolor="yellow"><b>Rp 22.200.000</b></td>
+        </tr>
+    </table>
+    <h2>Multimedia</h2>
+    <ol>
+        <li>Audio</li>
+        <!-- controls = menambahkan atribut kontrol pada audio -->
+        <!-- autoplay = otomatis memutar -->
+        <!-- loop = repeat (mengulang otomatis ketika sudah selesai) -->
+        <!-- hidden = menyembunyikan tampilan media -->
+        <audio controls loop
+            src="audio/2020 Ramadan Kids Special Nasheed - Hasbi Rabbi jallallah - New Best Kids Naat Sharif.mp3"></audio>
+        <li>Vidio</li>
+        <!-- controls = menambahkan atribut kontrol pada audio -->
+        <!-- autoplay = otomatis memutar -->
+        <!-- loop = repeat (mengulang otomatis ketika sudah selesai) -->
+        <video controls loop src="vidio/VID-20210207-WA0010.mp4"></video>
+        <li>Vidio Yotube</li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5oF18k0LkqQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </ol>
+
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .grid-respon {
+            width: 80%;
+            margin: auto;
+            border: 10px solid white;
+            box-shadow: 2px 2px 5px gray;
+            display: grid;
+            list-style-type: none;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 5px;
+
+        }
+
+        li {
+            background-color: greenyellow;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            display: block;
+        }
+
+        /* nth-child memilih anak lis 
+        even yang ganjil, odd yang genap */
+        li:nth-child(even) {
+            background-color: cornflowerblue;
+        }
+
+        .container {
+            width: 80%;
+            border: 1px solid black;
+            display: grid;
+            margin: 50px auto;
+            grid-template-areas:
+                'header header header'
+                'sidebar content content'
+                'sidebar content content'
+                'footer footer footer';
+
+        }
+
+        .item {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: blue;
+
+        }
+
+        .sidebar {
+            background-color: burlywood;
+            grid-area: sidebar;
+        }
+
+        .content {
+            background-color: cadetblue;
+            grid-area: content;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgb(0, 139, 0);
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>Penggunaan GRID CSS</h1>
+    <ul class="grid-respon">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+
+    <div class="container">
+        <div class="item header">:mortar_board: Header</div>
+        <div class="item sidebar">Sidear</div>
+        <div class="item content">Content</div>
+        <div class="item footer">Footer</div>
+    </div>
+</body>
+
+
+</html>
